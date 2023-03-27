@@ -290,6 +290,7 @@
 				DEVELOPMENT_TEAM = 626Z9N6MMT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstaCloneApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Instagram Clone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +319,7 @@
 				DEVELOPMENT_TEAM = 626Z9N6MMT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstaCloneApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Instagram Clone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
