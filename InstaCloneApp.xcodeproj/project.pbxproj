@@ -10,6 +10,9 @@
 		D32E85B729D239D900F67C23 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D32E85B629D239D900F67C23 /* FirebaseAnalytics */; };
 		D32E85B929D239D900F67C23 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D32E85B829D239D900F67C23 /* FirebaseAuth */; };
 		D32E85BB29D239D900F67C23 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D32E85BA29D239D900F67C23 /* FirebaseFirestore */; };
+		D32E85BD29D2B7C100F67C23 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E85BC29D2B7C100F67C23 /* FeedViewController.swift */; };
+		D32E85BF29D2B7D000F67C23 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E85BE29D2B7D000F67C23 /* SettingsViewController.swift */; };
+		D32E85C129D2B7E800F67C23 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E85C029D2B7E800F67C23 /* UploadViewController.swift */; };
 		D359BF5029D228E100E2DB80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359BF4F29D228E100E2DB80 /* AppDelegate.swift */; };
 		D359BF5229D228E100E2DB80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359BF5129D228E100E2DB80 /* SceneDelegate.swift */; };
 		D359BF5429D228E100E2DB80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359BF5329D228E100E2DB80 /* ViewController.swift */; };
@@ -17,10 +20,12 @@
 		D359BF5929D228E200E2DB80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D359BF5829D228E200E2DB80 /* Assets.xcassets */; };
 		D359BF5C29D228E200E2DB80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D359BF5A29D228E200E2DB80 /* LaunchScreen.storyboard */; };
 		D39AF5C529D233FC00E14AA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D39AF5C429D233FC00E14AA0 /* GoogleService-Info.plist */; };
-		D3D406B829D2384900A8910C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D3D406B729D2384900A8910C /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D32E85BC29D2B7C100F67C23 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		D32E85BE29D2B7D000F67C23 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D32E85C029D2B7E800F67C23 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		D359BF4C29D228E100E2DB80 /* InstaCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D359BF4F29D228E100E2DB80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D359BF5129D228E100E2DB80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +35,6 @@
 		D359BF5B29D228E200E2DB80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D359BF5D29D228E200E2DB80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D39AF5C429D233FC00E14AA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D3D406B729D2384900A8910C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +73,14 @@
 				D359BF4F29D228E100E2DB80 /* AppDelegate.swift */,
 				D359BF5129D228E100E2DB80 /* SceneDelegate.swift */,
 				D359BF5329D228E100E2DB80 /* ViewController.swift */,
+				D32E85C029D2B7E800F67C23 /* UploadViewController.swift */,
+				D32E85BE29D2B7D000F67C23 /* SettingsViewController.swift */,
+				D32E85BC29D2B7C100F67C23 /* FeedViewController.swift */,
 				D359BF5529D228E100E2DB80 /* Main.storyboard */,
 				D359BF5829D228E200E2DB80 /* Assets.xcassets */,
 				D359BF5A29D228E200E2DB80 /* LaunchScreen.storyboard */,
 				D359BF5D29D228E200E2DB80 /* Info.plist */,
 				D39AF5C429D233FC00E14AA0 /* GoogleService-Info.plist */,
-				D3D406B729D2384900A8910C /* Podfile */,
 			);
 			path = InstaCloneApp;
 			sourceTree = "<group>";
@@ -145,7 +151,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D406B829D2384900A8910C /* Podfile in Resources */,
 				D359BF5C29D228E200E2DB80 /* LaunchScreen.storyboard in Resources */,
 				D39AF5C529D233FC00E14AA0 /* GoogleService-Info.plist in Resources */,
 				D359BF5929D228E200E2DB80 /* Assets.xcassets in Resources */,
@@ -161,7 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D359BF5429D228E100E2DB80 /* ViewController.swift in Sources */,
+				D32E85C129D2B7E800F67C23 /* UploadViewController.swift in Sources */,
 				D359BF5029D228E100E2DB80 /* AppDelegate.swift in Sources */,
+				D32E85BD29D2B7C100F67C23 /* FeedViewController.swift in Sources */,
+				D32E85BF29D2B7D000F67C23 /* SettingsViewController.swift in Sources */,
 				D359BF5229D228E100E2DB80 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
