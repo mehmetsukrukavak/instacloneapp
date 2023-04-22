@@ -17,6 +17,9 @@
 		D359BF5929D228E200E2DB80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D359BF5829D228E200E2DB80 /* Assets.xcassets */; };
 		D359BF5C29D228E200E2DB80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D359BF5A29D228E200E2DB80 /* LaunchScreen.storyboard */; };
 		D3685F0529E579F70043A3F0 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3685F0429E579F70043A3F0 /* FeedCell.swift */; };
+		D3965C4129F07CAD0027E1A3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3965C4029F07CAD0027E1A3 /* Post.swift */; };
+		D3965C4429F122BC0027E1A3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D3965C4329F122BC0027E1A3 /* SDWebImage */; };
+		D3965C4629F122BC0027E1A3 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D3965C4529F122BC0027E1A3 /* SDWebImageMapKit */; };
 		D39AF5C529D233FC00E14AA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D39AF5C429D233FC00E14AA0 /* GoogleService-Info.plist */; };
 		D3FE30DF29E0ACC900279758 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D3FE30DE29E0ACC900279758 /* FirebaseAnalytics */; };
 		D3FE30E129E0ACC900279758 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = D3FE30E029E0ACC900279758 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -60,6 +63,7 @@
 		D359BF5B29D228E200E2DB80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D359BF5D29D228E200E2DB80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3685F0429E579F70043A3F0 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		D3965C4029F07CAD0027E1A3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D39AF5C429D233FC00E14AA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3965C4629F122BC0027E1A3 /* SDWebImageMapKit in Frameworks */,
 				D3FE30F129E0ACC900279758 /* FirebaseDatabase in Frameworks */,
 				D3FE30FF29E0ACC900279758 /* FirebaseFunctionsCombine-Community in Frameworks */,
 				D3FE30F729E0ACC900279758 /* FirebaseFirestore in Frameworks */,
@@ -78,6 +83,7 @@
 				D3FE30FB29E0ACC900279758 /* FirebaseFirestoreSwift in Frameworks */,
 				D3FE30E729E0ACC900279758 /* FirebaseAppCheck in Frameworks */,
 				D3FE30E529E0ACC900279758 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				D3965C4429F122BC0027E1A3 /* SDWebImage in Frameworks */,
 				D3FE30EB29E0ACC900279758 /* FirebaseAuth in Frameworks */,
 				D3FE30EF29E0ACC900279758 /* FirebaseCrashlytics in Frameworks */,
 				D3FE310F29E0ACC900279758 /* FirebaseRemoteConfigSwift in Frameworks */,
@@ -132,6 +138,7 @@
 				D359BF5A29D228E200E2DB80 /* LaunchScreen.storyboard */,
 				D359BF5D29D228E200E2DB80 /* Info.plist */,
 				D39AF5C429D233FC00E14AA0 /* GoogleService-Info.plist */,
+				D3965C4029F07CAD0027E1A3 /* Post.swift */,
 			);
 			path = InstaCloneApp;
 			sourceTree = "<group>";
@@ -180,6 +187,8 @@
 				D3FE310E29E0ACC900279758 /* FirebaseRemoteConfigSwift */,
 				D3FE311029E0ACC900279758 /* FirebaseStorage */,
 				D3FE311229E0ACC900279758 /* FirebaseStorageCombine-Community */,
+				D3965C4329F122BC0027E1A3 /* SDWebImage */,
+				D3965C4529F122BC0027E1A3 /* SDWebImageMapKit */,
 			);
 			productName = InstaCloneApp;
 			productReference = D359BF4C29D228E100E2DB80 /* InstaCloneApp.app */;
@@ -211,6 +220,7 @@
 			mainGroup = D359BF4329D228E100E2DB80;
 			packageReferences = (
 				D3FE30DD29E0ACC900279758 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D3965C4229F122BB0027E1A3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = D359BF4D29D228E100E2DB80 /* Products */;
 			projectDirPath = "";
@@ -243,6 +253,7 @@
 				D3685F0529E579F70043A3F0 /* FeedCell.swift in Sources */,
 				D359BF5429D228E100E2DB80 /* ViewController.swift in Sources */,
 				D32E85C129D2B7E800F67C23 /* UploadViewController.swift in Sources */,
+				D3965C4129F07CAD0027E1A3 /* Post.swift in Sources */,
 				D359BF5029D228E100E2DB80 /* AppDelegate.swift in Sources */,
 				D32E85BD29D2B7C100F67C23 /* FeedViewController.swift in Sources */,
 				D32E85BF29D2B7D000F67C23 /* SettingsViewController.swift in Sources */,
@@ -468,6 +479,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D3965C4229F122BB0027E1A3 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		D3FE30DD29E0ACC900279758 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -479,6 +498,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D3965C4329F122BC0027E1A3 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3965C4229F122BB0027E1A3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		D3965C4529F122BC0027E1A3 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3965C4229F122BB0027E1A3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
 		D3FE30DE29E0ACC900279758 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D3FE30DD29E0ACC900279758 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
