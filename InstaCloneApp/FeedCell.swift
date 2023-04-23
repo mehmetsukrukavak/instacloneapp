@@ -43,21 +43,23 @@ class FeedCell: UITableViewCell {
                 let likeStore = ["like": likeCount + 1] as [String : Any]
                 
                 fireStoreDatabase.collection("Posts").document(documentId).setData(likeStore, merge: true)
-            }
-            let userEmail = userEmailLabel.text!
-            
-            fireStoreDatabase.collection("Users").whereField("email", isEqualTo: userEmail).getDocuments { (snapshot, error) in
-                if error == nil {
-                    if snapshot?.isEmpty == false && snapshot != nil {
-                        for document in snapshot!.documents {
-                            if let playerId = document.get ("playerId") as? String {
-                                OneSignal.postNotification(["contents": ["en": "\(Auth.auth().currentUser!.email!) liked your post"], "include_player_ids": ["\(playerId)"]])
+                
+                let userEmail = userEmailLabel.text!
+                
+                fireStoreDatabase.collection("Users").whereField("email", isEqualTo: userEmail).getDocuments { (snapshot, error) in
+                    if error == nil {
+                        if snapshot?.isEmpty == false && snapshot != nil {
+                            for document in snapshot!.documents {
+                                if let playerId = document.get ("playerId") as? String {
+                                    OneSignal.postNotification(["contents": ["en": "\(Auth.auth().currentUser!.email!) liked your post"], "include_player_ids": ["\(playerId)"]])
+                                }
                             }
                         }
                     }
+                    
                 }
-                
             }
+           
             
         }
     }
