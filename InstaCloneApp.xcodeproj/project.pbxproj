@@ -21,6 +21,10 @@
 		D3965C4429F122BC0027E1A3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D3965C4329F122BC0027E1A3 /* SDWebImage */; };
 		D3965C4629F122BC0027E1A3 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D3965C4529F122BC0027E1A3 /* SDWebImageMapKit */; };
 		D39AF5C529D233FC00E14AA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D39AF5C429D233FC00E14AA0 /* GoogleService-Info.plist */; };
+		D3AF008E29F5295B00AABACB /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AF008D29F5295B00AABACB /* NotificationService.swift */; };
+		D3AF009229F5295B00AABACB /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D3AF008B29F5295B00AABACB /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D3AF009929F52A6200AABACB /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = D3AF009829F52A6200AABACB /* OneSignal */; };
+		D3AF009B29F52A6200AABACB /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = D3AF009A29F52A6200AABACB /* OneSignalExtension */; };
 		D3FE30DF29E0ACC900279758 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D3FE30DE29E0ACC900279758 /* FirebaseAnalytics */; };
 		D3FE30E129E0ACC900279758 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = D3FE30E029E0ACC900279758 /* FirebaseAnalyticsOnDeviceConversion */; };
 		D3FE30E329E0ACC900279758 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D3FE30E229E0ACC900279758 /* FirebaseAnalyticsSwift */; };
@@ -50,6 +54,30 @@
 		D3FE311329E0ACC900279758 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D3FE311229E0ACC900279758 /* FirebaseStorageCombine-Community */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D3AF009029F5295B00AABACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D359BF4429D228E100E2DB80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3AF008A29F5295A00AABACB;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3AF009329F5295B00AABACB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D3AF009229F5295B00AABACB /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D32E85BC29D2B7C100F67C23 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		D32E85BE29D2B7D000F67C23 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +93,10 @@
 		D3685F0429E579F70043A3F0 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		D3965C4029F07CAD0027E1A3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D39AF5C429D233FC00E14AA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3AF008B29F5295B00AABACB /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3AF008D29F5295B00AABACB /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		D3AF008F29F5295B00AABACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3AF009C29F52B5F00AABACB /* InstaCloneApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InstaCloneApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +109,7 @@
 				D3FE30FF29E0ACC900279758 /* FirebaseFunctionsCombine-Community in Frameworks */,
 				D3FE30F729E0ACC900279758 /* FirebaseFirestore in Frameworks */,
 				D3FE30E329E0ACC900279758 /* FirebaseAnalyticsSwift in Frameworks */,
+				D3AF009929F52A6200AABACB /* OneSignal in Frameworks */,
 				D3FE30DF29E0ACC900279758 /* FirebaseAnalytics in Frameworks */,
 				D3FE30E129E0ACC900279758 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				D3FE310729E0ACC900279758 /* FirebaseMLModelDownloader in Frameworks */,
@@ -88,6 +121,7 @@
 				D3FE30EF29E0ACC900279758 /* FirebaseCrashlytics in Frameworks */,
 				D3FE310F29E0ACC900279758 /* FirebaseRemoteConfigSwift in Frameworks */,
 				D3FE310129E0ACC900279758 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				D3AF009B29F52A6200AABACB /* OneSignalExtension in Frameworks */,
 				D3FE30F329E0ACC900279758 /* FirebaseDatabaseSwift in Frameworks */,
 				D3FE30FD29E0ACC900279758 /* FirebaseFunctions in Frameworks */,
 				D3FE311329E0ACC900279758 /* FirebaseStorageCombine-Community in Frameworks */,
@@ -104,6 +138,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3AF008829F5295A00AABACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				D359BF4E29D228E100E2DB80 /* InstaCloneApp */,
+				D3AF008C29F5295B00AABACB /* OneSignalNotificationServiceExtension */,
 				D359BF4D29D228E100E2DB80 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				D359BF4C29D228E100E2DB80 /* InstaCloneApp.app */,
+				D3AF008B29F5295B00AABACB /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +169,7 @@
 		D359BF4E29D228E100E2DB80 /* InstaCloneApp */ = {
 			isa = PBXGroup;
 			children = (
+				D3AF009C29F52B5F00AABACB /* InstaCloneApp.entitlements */,
 				D359BF4F29D228E100E2DB80 /* AppDelegate.swift */,
 				D359BF5129D228E100E2DB80 /* SceneDelegate.swift */,
 				D359BF5329D228E100E2DB80 /* ViewController.swift */,
@@ -143,6 +187,15 @@
 			path = InstaCloneApp;
 			sourceTree = "<group>";
 		};
+		D3AF008C29F5295B00AABACB /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D3AF008D29F5295B00AABACB /* NotificationService.swift */,
+				D3AF008F29F5295B00AABACB /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,10 +206,12 @@
 				D359BF4829D228E100E2DB80 /* Sources */,
 				D359BF4929D228E100E2DB80 /* Frameworks */,
 				D359BF4A29D228E100E2DB80 /* Resources */,
+				D3AF009329F5295B00AABACB /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D3AF009129F5295B00AABACB /* PBXTargetDependency */,
 			);
 			name = InstaCloneApp;
 			packageProductDependencies = (
@@ -189,10 +244,29 @@
 				D3FE311229E0ACC900279758 /* FirebaseStorageCombine-Community */,
 				D3965C4329F122BC0027E1A3 /* SDWebImage */,
 				D3965C4529F122BC0027E1A3 /* SDWebImageMapKit */,
+				D3AF009829F52A6200AABACB /* OneSignal */,
+				D3AF009A29F52A6200AABACB /* OneSignalExtension */,
 			);
 			productName = InstaCloneApp;
 			productReference = D359BF4C29D228E100E2DB80 /* InstaCloneApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D3AF008A29F5295A00AABACB /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3AF009629F5295B00AABACB /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				D3AF008729F5295A00AABACB /* Sources */,
+				D3AF008829F5295A00AABACB /* Frameworks */,
+				D3AF008929F5295A00AABACB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = D3AF008B29F5295B00AABACB /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -201,11 +275,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					D359BF4B29D228E100E2DB80 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					D3AF008A29F5295A00AABACB = {
+						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
@@ -221,12 +298,14 @@
 			packageReferences = (
 				D3FE30DD29E0ACC900279758 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				D3965C4229F122BB0027E1A3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				D3AF009729F52A6200AABACB /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
 			);
 			productRefGroup = D359BF4D29D228E100E2DB80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D359BF4B29D228E100E2DB80 /* InstaCloneApp */,
+				D3AF008A29F5295A00AABACB /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -240,6 +319,13 @@
 				D39AF5C529D233FC00E14AA0 /* GoogleService-Info.plist in Resources */,
 				D359BF5929D228E200E2DB80 /* Assets.xcassets in Resources */,
 				D359BF5729D228E100E2DB80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3AF008929F5295A00AABACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +347,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3AF008729F5295A00AABACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3AF008E29F5295B00AABACB /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3AF009129F5295B00AABACB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3AF008A29F5295A00AABACB /* OneSignalNotificationServiceExtension */;
+			targetProxy = D3AF009029F5295B00AABACB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D359BF5529D228E100E2DB80 /* Main.storyboard */ = {
@@ -400,14 +502,17 @@
 		D359BF6129D228E200E2DB80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InstaCloneApp/InstaCloneApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 626Z9N6MMT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstaCloneApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Instagram Clone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To Chose a photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -429,14 +534,17 @@
 		D359BF6229D228E200E2DB80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InstaCloneApp/InstaCloneApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 626Z9N6MMT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstaCloneApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Instagram Clone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To Chose a photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -449,6 +557,58 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mehmetsukrukavak.InstaCloneApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3AF009429F5295B00AABACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626Z9N6MMT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehmetsukrukavak.InstaCloneApp.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3AF009529F5295B00AABACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626Z9N6MMT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehmetsukrukavak.InstaCloneApp.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,6 +636,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D3AF009629F5295B00AABACB /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3AF009429F5295B00AABACB /* Debug */,
+				D3AF009529F5295B00AABACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -485,6 +654,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.0;
+			};
+		};
+		D3AF009729F52A6200AABACB /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
 			};
 		};
 		D3FE30DD29E0ACC900279758 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
@@ -507,6 +684,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D3965C4229F122BB0027E1A3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
+		};
+		D3AF009829F52A6200AABACB /* OneSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3AF009729F52A6200AABACB /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignal;
+		};
+		D3AF009A29F52A6200AABACB /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3AF009729F52A6200AABACB /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
 		};
 		D3FE30DE29E0ACC900279758 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;

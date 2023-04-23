@@ -7,6 +7,7 @@
 
 import UIKit
 
+import Firebase
 import FirebaseStorage
 import FirebaseFirestore
 import FirebaseAuth
@@ -23,6 +24,10 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let hideKeyboardgestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+                   
+       view.addGestureRecognizer(hideKeyboardgestureRecognizer)
+        
         imageView.isUserInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(chooseImage))
         imageView.addGestureRecognizer(gestureRecognizer)
@@ -48,8 +53,12 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.present (alert, animated: true, completion: nil)
     }
     
+    @objc func hideKeyboard(){
+            view.endEditing(true)
+        }
+    
     @IBAction func uploadButtonClicked(_ sender: Any) {
-        
+        uploadButton.isEnabled = false
         let storage = Storage.storage()
         
         let storageReference = storage.reference()
@@ -81,6 +90,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                                     self.makeAlert(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Error")
                                     
                                 }else{
+                                    self.uploadButton.isEnabled = true
                                     self.imageView.image = UIImage(named: "selectImage")
                                     self.commentText.text = ""
                                     self.tabBarController?.selectedIndex = 0
