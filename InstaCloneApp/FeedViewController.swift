@@ -29,7 +29,9 @@ class FeedViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         
         let firestoreDatabase = Firestore.firestore()
         
-        firestoreDatabase.collection("Posts").addSnapshotListener { (snapshot, error) in
+        firestoreDatabase.collection("Posts")
+            .order(by: "date", descending: true)
+            .addSnapshotListener { (snapshot, error) in
             if error != nil {
                 self.makeAlert(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Error")
             } else{
@@ -75,7 +77,7 @@ class FeedViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         cell.userEmailLabel.text = post.getPostedBy()
         
         cell.userImageView.sd_setImage(with: URL(string: post.getImageURL()))
-       
+        cell.documentId = post.getDocumentId()
         return cell;
     }
     

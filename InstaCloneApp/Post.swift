@@ -41,5 +41,9 @@ class Post{
         return _imageURL
     }
     
+    func getDocumentId() -> String {
+        return _documentId
+    }
+    
   
 }
